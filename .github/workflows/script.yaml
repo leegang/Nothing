@@ -1,13 +1,9 @@
 name: 自动获取ss节点
 
 on:
+  schedule:
+    - cron: '0 8 * * *'  # 每天 8 AM 触发
   workflow_dispatch:  # 使工作流支持手动触发
-  push:
-    branches:
-      - main  # 当推送到 main 分支时触发
-  pull_request:
-    branches:
-      - main  # 当创建 PR 到 main 分支时触发
 
 jobs:
   build:
@@ -18,4 +14,12 @@ jobs:
         uses: actions/checkout@v3  # 获取代码
 
       - name: 执行文件点击打开获取ss节点信息
-        run: ./ss
+        run: ./ss | tee url.txt  # 执行文件并将结果保存到 url.txt
+
+      - name: 提交更改
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add url.txt
+          git commit -m '每日更新 ss 地址'
+          git push origin main
