@@ -30,12 +30,12 @@ jobs:
       run: |
         python convert.py
 
-    - name: Commit config.txt
+    - name: Commit REMOTE.conf
       uses: EndBug/add-and-commit@v9
       with:
         author_name: 'github-actions[bot]'
         author_email: 'github-actions[bot]@users.noreply.github.com'
-        message: 'Add config.txt'
-        add: './config.txt'
+        message: 'Add REMOTE.conf'
+        add: './REMOTE.conf'
 
-        path: config.txt
+        path: REMOTE.conf
