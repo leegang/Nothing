@@ -1,5 +1,4 @@
-
-    #!MANAGED-CONFIG  https://raw.githubusercontent.com/leegang/Nothing/refs/heads/main/config.txt interval=86400 strict=false
+#!MANAGED-CONFIG  https://raw.githubusercontent.com/leegang/Nothing/refs/heads/main/config.txt interval=86400 strict=false
     [General]
 loglevel = notify
 bypass-system = true
