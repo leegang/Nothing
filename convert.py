@@ -137,7 +137,7 @@ def main():
 
         proxy_config = generate_proxy_config(lines)
 
-        with open('config.txt', 'w', encoding='utf-8') as file:
+        with open('REMOTE.conf', 'w', encoding='utf-8') as file:
             file.write(proxy_config)
 
         print("Configuration generated successfully:")
