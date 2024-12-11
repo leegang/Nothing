@@ -23,4 +23,9 @@ with open('url.txt', 'r') as file:
     lines = file.readlines()
 
 proxy_config = generate_proxy_config(lines)
+
+# Write the configuration to config.txt
+with open('config.txt', 'w') as file:
+    file.write(proxy_config)
+
 print(proxy_config)
