@@ -28,7 +28,10 @@ jobs:
         python convert.py
 
     - name: Upload proxy configuration
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
+      with:
+        name: config
+        path: config.txt
       with:
         name: proxy-config
         path: proxy_config.txt
