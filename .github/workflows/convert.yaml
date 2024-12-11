@@ -29,8 +29,12 @@ jobs:
       run: |
         python convert.py
 
-    - name: Upload proxy configuration
-      uses: actions/upload-artifact@v3
+    - name: Commit config.txt
+      uses: EndBug/add-and-commit@v9
       with:
-        name: config
+        author_name: 'github-actions[bot]'
+        author_email: 'github-actions[bot]@users.noreply.github.com'
+        message: 'Add config.txt'
+        add: './config.txt'
+
         path: config.txt
