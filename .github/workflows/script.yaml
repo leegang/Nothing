@@ -2,7 +2,7 @@ name: 自动获取ss节点
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # 每天 8 AM 触发
+    - cron: '0 3 * * *'  # 每天 8 AM 触发
 
 jobs:
   build:
