@@ -5,12 +5,14 @@ on:
     branches:
       - main
     paths:
-      - "url.txt"
+      - 'url.txt'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout repository
