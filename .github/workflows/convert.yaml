@@ -3,7 +3,7 @@ name: Convert SS Nodes
 on:
   workflow_dispatch: 
   push:
-    branch:
+    branches:
       - main
     paths:
       - "url.txt"
