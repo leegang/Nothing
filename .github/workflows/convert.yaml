@@ -1,12 +1,12 @@
 name: Convert SS Nodes
 
 on:
-  workflow_dispatch: 
   push:
     branches:
       - main
     paths:
       - "url.txt"
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -34,6 +34,3 @@ jobs:
       with:
         name: config
         path: config.txt
-      with:
-        name: proxy-config
-        path: proxy_config.txt
