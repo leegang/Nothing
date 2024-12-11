@@ -3,7 +3,7 @@ name: Convert SS Nodes
 on:
   push:
     paths:
-      - url.txt
+      - "url.txt"
 
 jobs:
   build:
