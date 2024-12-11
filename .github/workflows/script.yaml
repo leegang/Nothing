@@ -1,6 +1,7 @@
 name: 自动获取ss节点
 
 on:
+  workflow_dispatch: 
   schedule:
     - cron: '0 3 * * *'  # 每天 8 AM 触发
 
