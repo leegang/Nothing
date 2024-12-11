@@ -43,42 +43,101 @@ def format_proxy_name(name):
     # Ensure name is unique by adding index if needed
     return formatted_name
 
+def get_region_code(name):
+    """从节点名称中提取地区代码"""
+    # 更详细的地区匹配规则
+    region_patterns = {
+        # 添加常见的地区名称变体
+        'HK': ['HK', '香港', 'Hong Kong', 'HongKong'],
+        'US': ['US', '美国', 'United States', 'USA'],
+        'JP': ['JP', '日本', 'Japan'],
+        'TW': ['TW', '台湾', 'Taiwan'],
+        'SG': ['SG', '新加坡', 'Singapore'],
+        'KR': ['KR', '韩国', 'Korea'],
+        'CA': ['CA', '加拿大', 'Canada'],
+        # 可以添加更多地区
+        'UK': ['UK', '英国', 'United Kingdom'],
+        'DE': ['DE', '德国', 'Germany'],
+        'FR': ['FR', '法国', 'France'],
+        'AU': ['AU', '澳大利亚', 'Australia'],
+    }
+    
+    region_map = {
+        'HK': '香港',
+        'US': '美国',
+        'JP': '日本',
+        'TW': '台湾',
+        'SG': '新加坡',
+        'KR': '韩国',
+        'CA': '加拿大',
+        'UK': '英国',
+        'DE': '德国',
+        'FR': '法国',
+        'AU': '澳大利亚',
+    }
+    
+    name_upper = name.upper()
+    for code, patterns in region_patterns.items():
+        for pattern in patterns:
+            if pattern.upper() in name_upper:
+                return code, region_map[code]
+    
+    return None, None
+    
+
 def generate_proxy_config(lines):
-    proxy_config = "[Proxy]\nDIRECT = direct\n"
-    used_names = set()
+    # 按地区收集代理
+    region_proxies = {}
+    proxy_configs = "[Proxy]\nDIRECT = direct\n"
     
     for line in lines:
-        if not line.strip():  # Skip empty lines
-            continue
-            
-        try:
+        if line.strip():
             ss_url = line.strip()
             method, password, server, port = decode_ss_url(ss_url)
+            name = format_proxy_name(ss_url.split('#')[1] if '#' in ss_url else server)
+            region_code, region_name = get_region_code(name)
             
-            # Extract name from URL or use server address if no name provided
-            name = ss_url.split('#')[1] if '#' in ss_url else server
+            # 添加到相应地区组
+            if region_code:
+                if region_code not in region_proxies:
+                    region_proxies[region_code] = {'name': region_name, 'proxies': []}
+                region_proxies[region_code]['proxies'].append(name)
             
-            # Format and ensure unique name
-            base_name = format_proxy_name(name)
-            final_name = base_name
-            counter = 1
-            
-            while final_name in used_names:
-                final_name = f"{base_name}{counter}"
-                counter += 1
-            
-            used_names.add(final_name)
-            
-            config_line = (f'"{final_name}" = ss, {server}, {port}, '
-                         f'encrypt-method={method}, password={password}, '
-                         f'tfo=false, udp-relay=false\n')
-            proxy_config += config_line
-            
-        except Exception as e:
-            print(f"Warning: Skipping invalid line: {line.strip()} - {str(e)}")
-            continue
+            config_line = f'"{name}" = ss, {server}, {port}, encrypt-method={method}, password={password}, tfo=false, udp-relay=false\n'
+            proxy_configs += config_line
+
+    # 生成完整配置
+    config = """[General]
+loglevel = notify
+bypass-system = true
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
+bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+dns-server = system,119.29.29.29,223.5.5.5
+
+"""
+    # 添加代理配置
+    config += proxy_configs
+
+    # 生成代理组配置
+    config += "\n[Proxy Group]\n"
     
-    return proxy_config
+    # 主选择组
+    all_region_groups = ['DIRECT'] + [f'{name}节点' for code, name in sorted([(k, v['name']) for k, v in region_proxies.items()])]
+    config += f'Proxy = select, {", ".join(all_region_groups)}\n'
+    
+    # 各地区组
+    for region_code, region_info in sorted(region_proxies.items()):
+        region_name = region_info['name']
+        proxies = region_info['proxies']
+        if proxies:
+            config += f'{region_name}节点 = url-test, {", ".join(proxies)}, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100\n'
+
+    # 添加规则
+    config += """
+[Rule]
+FINAL,Proxy
+"""
+    return config
 
 def main():
     try:
