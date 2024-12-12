@@ -102,7 +102,7 @@ def generate_proxy_config(lines):
             config_line = f'"{name}" = ss, {server}, {port}, encrypt-method={method}, password={password}, tfo=false, udp-relay=false\n'
             proxy_configs += config_line
 
-    config = """#!MANAGED-CONFIG  https://raw.githubusercontent.com/leegang/Nothing/refs/heads/main/REMOTE.conf interval=21600 strict=false
+    config = """#!MANAGED-CONFIG  https://cdn.jsdelivr.net/gh/leegang/Nothing@main/REMOTE.conf interval=21600 strict=false
     [General]
 loglevel = notify
 bypass-system = true
