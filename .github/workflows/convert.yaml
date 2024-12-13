@@ -5,6 +5,9 @@ on:
     branches:
       - main
       
+  schedule:
+    - cron: '*/90 * * * *'
+      
   workflow_dispatch:
 
 jobs:
