@@ -1,9 +1,10 @@
 name: Convert SS Nodes
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["自动获取ss节点"]
+    types:
+      - completed
       
   schedule:
     - cron: '*/90 * * * *'
