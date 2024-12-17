@@ -116,7 +116,7 @@ dns-server = system,119.29.29.29,223.5.5.5
     config += "\n[Proxy Group]\n"
     
     all_region_groups = ['DIRECT'] + [f'{name}节点' for code, name in sorted([(k, v['name']) for k, v in region_proxies.items()])]
-    config += f'Proxy = "最优延迟节点",select, {", ".join(all_region_groups)}\n'
+    config += f'Proxy = 最优延迟节点,select, {", ".join(all_region_groups)}\n'
     
     for region_code, region_info in sorted(region_proxies.items()):
         region_name = region_info['name']
