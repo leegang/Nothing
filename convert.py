@@ -124,6 +124,10 @@ dns-server = system,119.29.29.29,223.5.5.5
         if proxies:
             config += f'{region_name}节点 = url-test, {", ".join(proxies)}, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100\n'
 
+    # Add a Proxy Group that automatically selects the node group with the lowest latency
+    all_proxies = [name for proxies in region_proxies.values() for name in proxies['proxies']]
+    config += f'最优延迟节点 = load-balance, {", ".join(all_proxies)}, url=http://www.gstatic.com/generate_204, interval=600\n'
+
     config += """
 [Rule]
 FINAL,Proxy
