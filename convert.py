@@ -103,7 +103,8 @@ def generate_proxy_config(lines):
             proxy_configs += config_line
 
     config = """#!MANAGED-CONFIG  https://cdn.jsdelivr.net/gh/leegang/Nothing@main/REMOTE.conf interval=21600 strict=false
-    [General]
+    
+[General]
 loglevel = notify
 bypass-system = true
 skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
@@ -116,7 +117,7 @@ dns-server = system,119.29.29.29,223.5.5.5
     config += "\n[Proxy Group]\n"
     
     all_region_groups = ['DIRECT'] + [f'{name}节点' for code, name in sorted([(k, v['name']) for k, v in region_proxies.items()])]
-    config += f'Proxy = 最优延迟节点,select, {", ".join(all_region_groups)}\n'
+    config += f'Proxy = select,最优延迟节点, {", ".join(all_region_groups)}\n'
     
     for region_code, region_info in sorted(region_proxies.items()):
         region_name = region_info['name']
@@ -126,11 +127,11 @@ dns-server = system,119.29.29.29,223.5.5.5
 
     # Add a Proxy Group that automatically selects the node group with the lowest latency
     all_proxies = [name for proxies in region_proxies.values() for name in proxies['proxies']]
-    config += f'最优延迟节点 = load-balance, {", ".join(all_proxies)}, url=http://www.gstatic.com/generate_204, interval=600\n'
+    config += f'最优延迟节点 = url-test, {", ".join(all_proxies)}, url=http://www.gstatic.com/generate_204, interval=600\n'
 
     config += """
 [Rule]
-FINAL,最优延迟节点
+FINAL,Proxy
 """
     return config
     
