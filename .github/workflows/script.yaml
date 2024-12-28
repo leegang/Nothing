@@ -2,7 +2,7 @@ name: 自动获取ss节点
 
 on:
   schedule:
-    - cron: '*/60 * * * *'  # 每天 8 AM 触发
+    - cron: '8 0 * * *'  # 每天 8:08 AM 触发
   workflow_dispatch: 
 
 jobs:
