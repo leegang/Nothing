@@ -28,7 +28,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip yaml
+        python -m pip install --upgrade pip pyyaml
 
     - name: Run conversion script
       run: |
