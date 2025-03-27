@@ -84,7 +84,7 @@ proxies:
   type: ss
   udp: false
 proxy-groups:
-- name: Proxy
+- name: 🚀 手动切换
   proxies:
   - 一休SG
   - 一休TW
@@ -99,6 +99,39 @@ proxy-groups:
   - 一休HK_1
   - 一休HK_2
   type: select
+- interval: 600
+  lazy: true
+  name: ♻️ 自动选择
+  proxies:
+  - 一休SG
+  - 一休TW
+  - 一休US
+  - 一休CA
+  - 一休KR
+  - 一休HK
+  - 一休JP
+  - 一休US_1
+  - 一休JP_1
+  - 一休JP_2
+  - 一休HK_1
+  - 一休HK_2
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+- name: 🔀 负载均衡
+  proxies:
+  - 一休SG
+  - 一休TW
+  - 一休US
+  - 一休CA
+  - 一休KR
+  - 一休HK
+  - 一休JP
+  - 一休US_1
+  - 一休JP_1
+  - 一休JP_2
+  - 一休HK_1
+  - 一休HK_2
+  type: load-balance
 rule-providers:
   apple:
     behavior: domain
