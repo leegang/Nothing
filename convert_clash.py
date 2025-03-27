@@ -44,43 +44,6 @@ def format_proxy_name(name, existing_names):
         formatted_name = new_name
     return formatted_name
 
-def get_region_code(name):
-    region_patterns = {
-        'HK': ['HK', '香港', 'Hong Kong', 'HongKong'],
-        'US': ['US', '美国', 'United States', 'USA'],
-        'JP': ['JP', '日本', 'Japan'],
-        'TW': ['TW', '台湾', 'Taiwan'],
-        'SG': ['SG', '新加坡', 'Singapore'],
-        'KR': ['KR', '韩国', 'Korea'],
-        'CA': ['CA', '加拿大', 'Canada'],
-        'UK': ['UK', '英国', 'United Kingdom'],
-        'DE': ['DE', '德国', 'Germany'],
-        'FR': ['FR', '法国', 'France'],
-        'AU': ['AU', '澳大利亚', 'Australia'],
-    }
-    
-    region_map = {
-        'HK': '香港',
-        'US': '美国',
-        'JP': '日本',
-        'TW': '台湾',
-        'SG': '新加坡',
-        'KR': '韩国',
-        'CA': '加拿大',
-        'UK': '英国',
-        'DE': '德国',
-        'FR': '法国',
-        'AU': '澳大利亚',
-    }
-    
-    name_upper = name.upper()
-    for code, patterns in region_patterns.items():
-        for pattern in patterns:
-            if pattern.upper() in name_upper:
-                return code, region_map[code]
-    
-    return None, None
-
 def generate_clash_config(lines):
     proxies = []
     existing_names = set()
@@ -114,9 +77,116 @@ def generate_clash_config(lines):
             }
         ],
         'rules': [
-            'DOMAIN-SUFFIX,ipwho.is,Proxy',
+            'RULE-SET,applications,DIRECT',
+            'DOMAIN,clash.razord.top,DIRECT',
+            'DOMAIN,yacd.haishan.me,DIRECT',
+            'RULE-SET,private,DIRECT',
+            'RULE-SET,reject,REJECT',
+            'RULE-SET,icloud,DIRECT',
+            'RULE-SET,apple,DIRECT',
+            'RULE-SET,google,Proxy',
+            'RULE-SET,proxy,Proxy',
+            'RULE-SET,direct,DIRECT',
+            'RULE-SET,lancidr,DIRECT',
+            'RULE-SET,cncidr,DIRECT',
+            'RULE-SET,telegramcidr,Proxy',
+            'GEOIP,LAN,DIRECT',
+            'GEOIP,CN,DIRECT',
             'MATCH,Proxy'
-        ]
+        ],
+        'rule-providers': {
+            'reject': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt',
+                'path': './ruleset/reject.yaml',
+                'interval': 86400
+            },
+            'icloud': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt',
+                'path': './ruleset/icloud.yaml',
+                'interval': 86400
+            },
+            'apple': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt',
+                'path': './ruleset/apple.yaml',
+                'interval': 86400
+            },
+            'google': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt',
+                'path': './ruleset/google.yaml',
+                'interval': 86400
+            },
+            'proxy': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt',
+                'path': './ruleset/proxy.yaml',
+                'interval': 86400
+            },
+            'direct': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt',
+                'path': './ruleset/direct.yaml',
+                'interval': 86400
+            },
+            'private': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt',
+                'path': './ruleset/private.yaml',
+                'interval': 86400
+            },
+            'gfw': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt',
+                'path': './ruleset/gfw.yaml',
+                'interval': 86400
+            },
+            'tld-not-cn': {
+                'type': 'http',
+                'behavior': 'domain',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt',
+                'path': './ruleset/tld-not-cn.yaml',
+                'interval': 86400
+            },
+            'telegramcidr': {
+                'type': 'http',
+                'behavior': 'ipcidr',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt',
+                'path': './ruleset/telegramcidr.yaml',
+                'interval': 86400
+            },
+            'cncidr': {
+                'type': 'http',
+                'behavior': 'ipcidr',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt',
+                'path': './ruleset/cncidr.yaml',
+                'interval': 86400
+            },
+            'lancidr': {
+                'type': 'http',
+                'behavior': 'ipcidr',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt',
+                'path': './ruleset/lancidr.yaml',
+                'interval': 86400
+            },
+            'applications': {
+                'type': 'http',
+                'behavior': 'classical',
+                'url': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt',
+                'path': './ruleset/applications.yaml',
+                'interval': 86400
+            }
+        }
     }
     
     return yaml.dump(config, allow_unicode=True)
