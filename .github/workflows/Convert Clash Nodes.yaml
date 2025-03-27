@@ -2,7 +2,7 @@ name: Convert Clash Nodes
 
 on:
   workflow_run:
-    workflows: ["自动获取ss节点"]
+    workflows: ["Convert SS Nodes"]
     types:
       - completed
       
