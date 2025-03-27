@@ -66,6 +66,7 @@ def generate_clash_config(lines):
                 'udp': False
             }
             proxies.append(proxy)
+
     
     config = {
         'proxies': proxies,
@@ -73,7 +74,7 @@ def generate_clash_config(lines):
             {
                 'name': '🚀 手动切换',
                 'type': 'select',
-                'proxies': [proxy['name'] for proxy in proxies]
+                'proxies': ['♻️ 自动选择', '🔀 负载均衡'] + [proxy['name'] for proxy in proxies]
             },
             {
                 'name': '♻️ 自动选择',
@@ -98,14 +99,14 @@ def generate_clash_config(lines):
             'RULE-SET,icloud,DIRECT',
             'RULE-SET,apple,DIRECT',
             'RULE-SET,google,🚀 手动切换',
-            'RULE-SET,proxy,🚀 手动切换',
+            'RULE-SET,proxy,♻️ 自动选择',
             'RULE-SET,direct,DIRECT',
             'RULE-SET,lancidr,DIRECT',
             'RULE-SET,cncidr,DIRECT',
-            'RULE-SET,telegramcidr,🚀 手动切换',
+            'RULE-SET,telegramcidr,♻️ 自动选择',
             'GEOIP,LAN,DIRECT',
             'GEOIP,CN,DIRECT',
-            'MATCH,🚀 手动切换'
+            'MATCH,♻️ 自动选择'
         ],
         'rule-providers': {
             'reject': {
