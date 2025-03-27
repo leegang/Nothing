@@ -114,6 +114,7 @@ def generate_clash_config(lines):
             }
         ],
         'rules': [
+            'DOMAIN-SUFFIX,ipwho.is,Proxy',
             'MATCH,Proxy'
         ]
     }
