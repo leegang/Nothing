@@ -71,8 +71,21 @@ def generate_clash_config(lines):
         'proxies': proxies,
         'proxy-groups': [
             {
-                'name': 'Proxy',
+                'name': '🚀 手动切换',
                 'type': 'select',
+                'proxies': [proxy['name'] for proxy in proxies]
+            },
+            {
+                'name': '♻️ 自动选择',
+                'type': 'url-test',
+                'lazy': True,
+                'url': 'http://www.gstatic.com/generate_204',
+                'interval': 600,
+                'proxies': [proxy['name'] for proxy in proxies]
+            },
+            {
+                'name': '🔀 负载均衡',
+                'type': 'load-balance',
                 'proxies': [proxy['name'] for proxy in proxies]
             }
         ],
