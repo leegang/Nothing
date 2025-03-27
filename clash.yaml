@@ -100,4 +100,5 @@ proxy-groups:
   - 一休HK_2
   type: select
 rules:
+- DOMAIN-SUFFIX,ipwho.is,Proxy
 - MATCH,Proxy
