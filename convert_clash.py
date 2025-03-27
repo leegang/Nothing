@@ -97,15 +97,15 @@ def generate_clash_config(lines):
             'RULE-SET,reject,REJECT',
             'RULE-SET,icloud,DIRECT',
             'RULE-SET,apple,DIRECT',
-            'RULE-SET,google,Proxy',
-            'RULE-SET,proxy,Proxy',
+            'RULE-SET,google,🚀 手动切换',
+            'RULE-SET,proxy,🚀 手动切换',
             'RULE-SET,direct,DIRECT',
             'RULE-SET,lancidr,DIRECT',
             'RULE-SET,cncidr,DIRECT',
-            'RULE-SET,telegramcidr,Proxy',
+            'RULE-SET,telegramcidr,🚀 手动切换',
             'GEOIP,LAN,DIRECT',
             'GEOIP,CN,DIRECT',
-            'MATCH,Proxy'
+            'MATCH,🚀 手动切换'
         ],
         'rule-providers': {
             'reject': {
