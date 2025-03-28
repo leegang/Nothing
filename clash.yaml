@@ -1,51 +1,72 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 一休JP
+  name: 一休HK
   password: amazonskr05
   port: 443
-  server: 18.141.139.23
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休SG
-  password: amazonskr05
-  port: 443
-  server: 3.0.50.161
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休US
-  password: amazonskr05
-  port: 443
-  server: 54.244.97.108
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休CA
-  password: amazonskr05
-  port: 443
-  server: 34.216.142.212
+  server: 35.89.254.58
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休KR
   password: amazonskr05
   port: 443
+  server: 47.128.245.70
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休JP
+  password: amazonskr05
+  port: 443
   server: 54.169.64.23
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休TW
+  name: 一休CA
   password: amazonskr05
   port: 443
-  server: 18.183.76.102
+  server: 54.244.97.108
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休US
+  password: amazonskr05
+  port: 443
+  server: 35.93.21.189
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休JP_1
   password: amazonskr05
   port: 443
+  server: 52.76.22.133
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休SG
+  password: amazonskr05
+  port: 443
+  server: 3.38.92.181
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休TW
+  password: amazonskr05
+  port: 443
   server: 43.203.206.73
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休JP_2
+  password: amazonskr05
+  port: 443
+  server: 3.36.72.86
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休HK_1
+  password: amazonskr05
+  port: 443
+  server: 18.183.76.102
   type: ss
   udp: false
 - cipher: aes-256-cfb
@@ -56,31 +77,10 @@ proxies:
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休HK
-  password: amazonskr05
-  port: 443
-  server: 54.169.103.201
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休HK_1
-  password: amazonskr05
-  port: 443
-  server: 47.128.245.70
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
   name: 一休HK_2
   password: amazonskr05
   port: 443
-  server: 54.187.221.114
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休JP_2
-  password: amazonskr05
-  port: 443
-  server: 52.76.22.133
+  server: 3.36.26.148
   type: ss
   udp: false
 proxy-groups:
@@ -88,51 +88,51 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 一休JP
-  - 一休SG
-  - 一休US
-  - 一休CA
-  - 一休KR
-  - 一休TW
-  - 一休JP_1
-  - 一休US_1
   - 一休HK
-  - 一休HK_1
-  - 一休HK_2
+  - 一休KR
+  - 一休JP
+  - 一休CA
+  - 一休US
+  - 一休JP_1
+  - 一休SG
+  - 一休TW
   - 一休JP_2
+  - 一休HK_1
+  - 一休US_1
+  - 一休HK_2
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 一休JP
-  - 一休SG
-  - 一休US
-  - 一休CA
-  - 一休KR
-  - 一休TW
-  - 一休JP_1
-  - 一休US_1
   - 一休HK
-  - 一休HK_1
-  - 一休HK_2
+  - 一休KR
+  - 一休JP
+  - 一休CA
+  - 一休US
+  - 一休JP_1
+  - 一休SG
+  - 一休TW
   - 一休JP_2
+  - 一休HK_1
+  - 一休US_1
+  - 一休HK_2
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 一休JP
-  - 一休SG
-  - 一休US
-  - 一休CA
-  - 一休KR
-  - 一休TW
-  - 一休JP_1
-  - 一休US_1
   - 一休HK
-  - 一休HK_1
-  - 一休HK_2
+  - 一休KR
+  - 一休JP
+  - 一休CA
+  - 一休US
+  - 一休JP_1
+  - 一休SG
+  - 一休TW
   - 一休JP_2
+  - 一休HK_1
+  - 一休US_1
+  - 一休HK_2
   type: load-balance
 rule-providers:
   apple:
