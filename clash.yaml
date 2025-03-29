@@ -7,14 +7,14 @@ proxies:
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休JP
+  name: 一休KR
   password: amazonskr05
   port: 443
-  server: 43.202.67.225
+  server: 54.199.103.26
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休JP_1
+  name: 一休JP
   password: amazonskr05
   port: 443
   server: 43.201.254.74
@@ -24,63 +24,63 @@ proxies:
   name: 一休HK
   password: amazonskr05
   port: 443
-  server: 18.141.139.23
+  server: 3.36.72.86
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休TW
+  name: 一休JP_1
   password: amazonskr05
   port: 443
-  server: 3.38.92.181
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休SG
-  password: amazonskr05
-  port: 443
-  server: 18.179.8.12
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休JP_2
-  password: amazonskr05
-  port: 443
-  server: 13.112.73.126
+  server: 54.169.64.23
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休US
   password: amazonskr05
   port: 443
-  server: 52.37.220.218
+  server: 54.218.67.209
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休US_1
   password: amazonskr05
   port: 443
-  server: 34.220.128.153
+  server: 54.245.10.2
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休TW
+  password: amazonskr05
+  port: 443
+  server: 13.112.73.126
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休HK_1
   password: amazonskr05
   port: 443
-  server: 54.178.177.97
+  server: 54.169.103.201
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休SG
+  password: amazonskr05
+  port: 443
+  server: 43.207.150.238
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休HK_2
   password: amazonskr05
   port: 443
-  server: 52.88.180.184
+  server: 34.217.15.41
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休KR
+  name: 一休JP_2
   password: amazonskr05
   port: 443
-  server: 54.199.103.26
+  server: 3.36.26.148
   type: ss
   udp: false
 proxy-groups:
@@ -89,50 +89,50 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔀 负载均衡
   - 一休CA
+  - 一休KR
   - 一休JP
-  - 一休JP_1
   - 一休HK
-  - 一休TW
-  - 一休SG
-  - 一休JP_2
+  - 一休JP_1
   - 一休US
   - 一休US_1
+  - 一休TW
   - 一休HK_1
+  - 一休SG
   - 一休HK_2
-  - 一休KR
+  - 一休JP_2
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
   - 一休CA
+  - 一休KR
   - 一休JP
-  - 一休JP_1
   - 一休HK
-  - 一休TW
-  - 一休SG
-  - 一休JP_2
+  - 一休JP_1
   - 一休US
   - 一休US_1
+  - 一休TW
   - 一休HK_1
+  - 一休SG
   - 一休HK_2
-  - 一休KR
+  - 一休JP_2
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
   - 一休CA
+  - 一休KR
   - 一休JP
-  - 一休JP_1
   - 一休HK
-  - 一休TW
-  - 一休SG
-  - 一休JP_2
+  - 一休JP_1
   - 一休US
   - 一休US_1
+  - 一休TW
   - 一休HK_1
+  - 一休SG
   - 一休HK_2
-  - 一休KR
+  - 一休JP_2
   type: load-balance
 rule-providers:
   apple:
