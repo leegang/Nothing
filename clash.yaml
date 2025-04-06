@@ -1,27 +1,20 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 一休JP
-  password: amazonskr05
-  port: 443
-  server: 47.129.230.32
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
   name: 一休KR
-  password: 6523asdfgh
-  port: 65231
-  server: 54.249.166.244
+  password: 25612qazwsx
+  port: 25612
+  server: 52.221.242.220
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休TW
-  password: 6523asdfgh
-  port: 65231
-  server: 52.194.222.36
+  name: 一休US
+  password: 463qwerty
+  port: 463
+  server: 34.215.191.184
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休JP_1
+  name: 一休JP
   password: 6523asdfgh
   port: 65231
   server: 54.250.154.37
@@ -35,52 +28,59 @@ proxies:
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休JP_2
+  name: 一休SG
   password: 6523asdfgh
   port: 65231
-  server: 54.92.112.22
+  server: 18.183.142.156
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休HK
-  password: amazonskr05
-  port: 443
-  server: 13.212.77.19
+  password: 6523asdfgh
+  port: 65231
+  server: 3.113.12.194
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休HK_1
   password: 463qwerty
   port: 463
-  server: 54.187.182.17
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休SG
-  password: amazonskr05
-  port: 443
-  server: 13.250.61.152
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休US
-  password: 463qwerty
-  port: 463
   server: 34.213.220.211
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休TW
+  password: 25612qazwsx
+  port: 25612
+  server: 18.142.181.4
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休HK_2
+  password: 25612qazwsx
+  port: 25612
+  server: 18.140.52.108
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休JP_1
+  password: 25612qazwsx
+  port: 25612
+  server: 13.229.208.218
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休US_1
   password: 463qwerty
   port: 463
-  server: 35.92.133.58
+  server: 34.213.176.128
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休HK_2
-  password: amazonskr05
-  port: 443
-  server: 43.201.254.74
+  name: 一休JP_2
+  password: 25612qazwsx
+  port: 25612
+  server: 52.221.184.76
   type: ss
   udp: false
 proxy-groups:
@@ -88,51 +88,51 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 一休JP
   - 一休KR
-  - 一休TW
-  - 一休JP_1
+  - 一休US
+  - 一休JP
   - 一休CA
-  - 一休JP_2
+  - 一休SG
   - 一休HK
   - 一休HK_1
-  - 一休SG
-  - 一休US
-  - 一休US_1
+  - 一休TW
   - 一休HK_2
+  - 一休JP_1
+  - 一休US_1
+  - 一休JP_2
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 一休JP
   - 一休KR
-  - 一休TW
-  - 一休JP_1
+  - 一休US
+  - 一休JP
   - 一休CA
-  - 一休JP_2
+  - 一休SG
   - 一休HK
   - 一休HK_1
-  - 一休SG
-  - 一休US
-  - 一休US_1
+  - 一休TW
   - 一休HK_2
+  - 一休JP_1
+  - 一休US_1
+  - 一休JP_2
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 一休JP
   - 一休KR
-  - 一休TW
-  - 一休JP_1
+  - 一休US
+  - 一休JP
   - 一休CA
-  - 一休JP_2
+  - 一休SG
   - 一休HK
   - 一休HK_1
-  - 一休SG
-  - 一休US
-  - 一休US_1
+  - 一休TW
   - 一休HK_2
+  - 一休JP_1
+  - 一休US_1
+  - 一休JP_2
   type: load-balance
 rule-providers:
   apple:
