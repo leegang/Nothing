@@ -1,65 +1,65 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 一休KR
-  password: thisgou
-  port: 80
-  server: 3.113.19.241
+  name: 一休HK
+  password: 25612qazwsx
+  port: 25612
+  server: 18.136.209.161
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休CA
   password: 463qwerty
   port: 463
-  server: 54.71.126.152
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休HK
-  password: 6523asdfgh
-  port: 623
-  server: 54.92.112.22
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休HK_1
-  password: thisgou
-  port: 80
-  server: 18.181.191.112
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休SG
-  password: thisgou
-  port: 80
-  server: 13.230.226.50
+  server: 35.167.5.118
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休US
   password: 463qwerty
   port: 463
-  server: 34.209.47.99
+  server: 52.33.3.233
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休US_1
   password: 463qwerty
   port: 463
-  server: 44.246.118.43
+  server: 35.95.37.83
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休KR
+  password: 25612qazwsx
+  port: 325
+  server: 18.140.63.226
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休JP
+  password: 6523asdfgh
+  port: 5635
+  server: 57.180.28.163
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休TW
   password: thisgou
   port: 80
-  server: 54.178.97.8
+  server: 13.113.255.5
   type: ss
   udp: false
 - cipher: aes-256-cfb
   name: 一休JP_1
+  password: amazonskr05
+  port: 443
+  server: 43.201.254.74
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休HK_1
   password: thisgou
   port: 80
-  server: 18.183.101.244
+  server: 43.206.239.23
   type: ss
   udp: false
 - cipher: aes-256-cfb
@@ -71,16 +71,16 @@ proxies:
   udp: false
 - cipher: aes-256-cfb
   name: 一休JP_2
-  password: 25612qazwsx
-  port: 25612
-  server: 52.221.184.76
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休TW
   password: thisgou
   port: 80
   server: 18.177.140.254
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休SG
+  password: thisgou
+  port: 80
+  server: 52.68.3.155
   type: ss
   udp: false
 proxy-groups:
@@ -88,51 +88,51 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 一休KR
-  - 一休CA
   - 一休HK
-  - 一休HK_1
-  - 一休SG
+  - 一休CA
   - 一休US
   - 一休US_1
+  - 一休KR
   - 一休JP
+  - 一休TW
   - 一休JP_1
+  - 一休HK_1
   - 一休HK_2
   - 一休JP_2
-  - 一休TW
+  - 一休SG
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 一休KR
-  - 一休CA
   - 一休HK
-  - 一休HK_1
-  - 一休SG
+  - 一休CA
   - 一休US
   - 一休US_1
+  - 一休KR
   - 一休JP
+  - 一休TW
   - 一休JP_1
+  - 一休HK_1
   - 一休HK_2
   - 一休JP_2
-  - 一休TW
+  - 一休SG
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 一休KR
-  - 一休CA
   - 一休HK
-  - 一休HK_1
-  - 一休SG
+  - 一休CA
   - 一休US
   - 一休US_1
+  - 一休KR
   - 一休JP
+  - 一休TW
   - 一休JP_1
+  - 一休HK_1
   - 一休HK_2
   - 一休JP_2
-  - 一休TW
+  - 一休SG
   type: load-balance
 rule-providers:
   apple:
