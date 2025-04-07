@@ -1,86 +1,86 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 一休JP
-  password: thisgou
-  port: 80
-  server: 52.68.3.155
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休JP_1
-  password: wiaimihu22
-  port: 80
-  server: 13.212.241.11
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休CA
-  password: 463qwerty
-  port: 463
-  server: 54.71.126.152
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休US
-  password: 463qwerty
-  port: 463
-  server: 34.209.47.99
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休HK
-  password: 25612qazwsx
-  port: 25612
-  server: 18.136.209.161
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休TW
-  password: thisgou
-  port: 80
-  server: 13.230.226.50
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休HK_1
-  password: thisgou
-  port: 80
-  server: 18.183.101.244
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休HK_2
-  password: 463qwerty
-  port: 463
-  server: 54.187.201.86
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休US_1
-  password: 463qwerty
-  port: 463
-  server: 35.93.139.175
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 一休KR
+  name: 一休SG
   password: 25612qazwsx
   port: 325
   server: 18.140.63.226
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休JP_2
+  name: 一休JP
   password: thisgou
   port: 80
-  server: 13.113.255.5
+  server: 13.230.226.50
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: 一休SG
+  name: 一休TW
+  password: thisgou
+  port: 80
+  server: 52.197.50.116
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休HK
+  password: 463qwerty
+  port: 463
+  server: 34.213.220.211
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休HK_1
+  password: 25612qazwsx
+  port: 231
+  server: 52.221.242.220
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休US
+  password: 463qwerty
+  port: 463
+  server: 54.71.126.152
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休JP_1
   password: wiaimihu22
   port: 80
-  server: 47.129.152.154
+  server: 54.151.204.146
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休JP_2
+  password: amazonskr05
+  port: 443
+  server: 43.201.254.74
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休CA
+  password: 463qwerty
+  port: 463
+  server: 34.213.176.128
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休HK_2
+  password: wiaimihu22
+  port: 80
+  server: 46.137.233.112
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休US_1
+  password: 463qwerty
+  port: 463
+  server: 35.167.5.118
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: 一休KR
+  password: thisgou
+  port: 80
+  server: 18.183.101.244
   type: ss
   udp: false
 proxy-groups:
@@ -88,51 +88,51 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
+  - 一休SG
   - 一休JP
-  - 一休JP_1
-  - 一休CA
-  - 一休US
-  - 一休HK
   - 一休TW
+  - 一休HK
   - 一休HK_1
+  - 一休US
+  - 一休JP_1
+  - 一休JP_2
+  - 一休CA
   - 一休HK_2
   - 一休US_1
   - 一休KR
-  - 一休JP_2
-  - 一休SG
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
+  - 一休SG
   - 一休JP
-  - 一休JP_1
-  - 一休CA
-  - 一休US
-  - 一休HK
   - 一休TW
+  - 一休HK
   - 一休HK_1
+  - 一休US
+  - 一休JP_1
+  - 一休JP_2
+  - 一休CA
   - 一休HK_2
   - 一休US_1
   - 一休KR
-  - 一休JP_2
-  - 一休SG
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
+  - 一休SG
   - 一休JP
-  - 一休JP_1
-  - 一休CA
-  - 一休US
-  - 一休HK
   - 一休TW
+  - 一休HK
   - 一休HK_1
+  - 一休US
+  - 一休JP_1
+  - 一休JP_2
+  - 一休CA
   - 一休HK_2
   - 一休US_1
   - 一休KR
-  - 一休JP_2
-  - 一休SG
   type: load-balance
 rule-providers:
   apple:
