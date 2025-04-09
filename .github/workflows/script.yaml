@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest  # 在 macOS 上编译
+    runs-on: ubuntu-latest 
 
     steps:
       - name: 获取仓库代码
