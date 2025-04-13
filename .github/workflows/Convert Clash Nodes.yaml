@@ -34,6 +34,11 @@ jobs:
       run: |
         python convert_clash.py
 
+    - name: 检查生成文件
+      run: |
+        ls -l clash.yaml
+        cat clash.yaml
+
     - name: Commit REMOTE.conf
       uses: EndBug/add-and-commit@v9
       with:
