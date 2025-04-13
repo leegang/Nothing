@@ -49,6 +49,11 @@ def main():
         print("未找到 ss.txt 文件，请确保文件存在于当前目录中。")
         return
 
+    # 打印读取到的 vmess_urls
+    print("\n读取到的 vmess URLs：")
+    for url in vmess_urls:
+        print(url)
+
     clash_nodes = []
 
     for vmess_url in vmess_urls:
@@ -57,6 +62,11 @@ def main():
             clash_node = convert_to_clash(vmess_data)
             if clash_node:
                 clash_nodes.append(clash_node)
+
+    # 打印生成的 Clash 节点
+    print("\n生成的 Clash 节点：")
+    for node in clash_nodes:
+        print(json.dumps(node, indent=4, ensure_ascii=False))
 
     # 输出为Clash配置文件
     clash_config = {
@@ -68,7 +78,7 @@ def main():
         import yaml
         yaml.dump(clash_config, f, default_flow_style=False, allow_unicode=True)
 
-    print("转换完成，结果保存在 clash_nodes.yaml 文件中！")
+    print("\n转换完成，结果保存在 clash_nodes.yaml 文件中！")
 
 if __name__ == "__main__":
     main()
