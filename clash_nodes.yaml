@@ -1,127 +1,44 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇩🇪 德国法兰克福
-  network: ws
-  port: 23451
-  server: frankfurt.faforex.eu.org
-  tls: false
-  type: vmess
-  uuid: f165ef69-850f-4e34-a871-b997c187ad24
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国-拉斯维加斯-002-1E
-  network: ws
-  port: 23069
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: 4e04511a-162f-4fa7-8a70-bc8a4b107f64
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国-拉斯维加斯-002-1A
-  network: ws
-  port: 23069
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: 236a6f9f-eb14-42e1-bcc3-2082d7694278
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港
+  name: 🇭🇰 香港-1B
   network: tcp
   port: 19901
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: a3c89d01-1b07-40b2-a7be-b3469d687200
+  uuid: 224d1225-7efa-455b-b87f-5316fa6f6990
   ws-opts: null
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国-拉斯维加斯-002-1C
-  network: ws
-  port: 23069
-  server: 45.147.201.231
+  name: 🇭🇰 香港-1A
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: c021c157-634c-4bf9-bfec-594738f7a576
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国-拉斯维加斯-002-1D
-  network: ws
-  port: 23069
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: 755fc6b9-372e-449c-9d80-9096a7083a97
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国-拉斯维加斯-002-1B
-  network: ws
-  port: 23069
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: e5d4d3e4-bb06-4fda-b3b6-d9c5a9c55566
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 2394824b-5999-4d3e-bb40-a97b739c2f9f
+  ws-opts: null
 proxy-groups:
 - name: 🚀 手动切换
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇩🇪 德国法兰克福
-  - 🇺🇸 美国-拉斯维加斯-002-1E
-  - 🇺🇸 美国-拉斯维加斯-002-1A
-  - 🇭🇰 香港
-  - 🇺🇸 美国-拉斯维加斯-002-1C
-  - 🇺🇸 美国-拉斯维加斯-002-1D
-  - 🇺🇸 美国-拉斯维加斯-002-1B
+  - 🇭🇰 香港-1B
+  - 🇭🇰 香港-1A
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇩🇪 德国法兰克福
-  - 🇺🇸 美国-拉斯维加斯-002-1E
-  - 🇺🇸 美国-拉斯维加斯-002-1A
-  - 🇭🇰 香港
-  - 🇺🇸 美国-拉斯维加斯-002-1C
-  - 🇺🇸 美国-拉斯维加斯-002-1D
-  - 🇺🇸 美国-拉斯维加斯-002-1B
+  - 🇭🇰 香港-1B
+  - 🇭🇰 香港-1A
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇩🇪 德国法兰克福
-  - 🇺🇸 美国-拉斯维加斯-002-1E
-  - 🇺🇸 美国-拉斯维加斯-002-1A
-  - 🇭🇰 香港
-  - 🇺🇸 美国-拉斯维加斯-002-1C
-  - 🇺🇸 美国-拉斯维加斯-002-1D
-  - 🇺🇸 美国-拉斯维加斯-002-1B
+  - 🇭🇰 香港-1B
+  - 🇭🇰 香港-1A
   type: load-balance
 rule-providers:
   apple:
