@@ -5,7 +5,7 @@ def decode_ss_url(ss_url):
         if 'ss://' not in ss_url:
             raise ValueError("Invalid SS URL format: missing 'ss://' prefix")
         
-        parts = ss_url.split('ss://')
+        parts = ss_url.split('vmess://')
         if len(parts) != 2:
             raise ValueError("Invalid SS URL format")
         
@@ -137,7 +137,7 @@ FINAL,Proxy
     
 def main():
     try:
-        with open('url.txt', 'r', encoding='utf-8') as file:
+        with open('ss.txt', 'r', encoding='utf-8') as file:
             lines = file.readlines()
 
         proxy_config = generate_proxy_config(lines)
