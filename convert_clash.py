@@ -3,10 +3,10 @@ import yaml
 
 def decode_ss_url(ss_url):
     try:
-        if 'ss://' not in ss_url:
+        if 'vmess://' not in ss_url:
             raise ValueError("Invalid SS URL format: missing 'ss://' prefix")
         
-        parts = ss_url.split('ss://')
+        parts = ss_url.split('vmess://')
         if len(parts) != 2:
             raise ValueError("Invalid SS URL format")
         
@@ -207,7 +207,7 @@ def generate_clash_config(lines):
 
 def main():
     try:
-        with open('url.txt', 'r', encoding='utf-8') as file:
+        with open('ss.txt', 'r', encoding='utf-8') as file:
             lines = file.readlines()
 
         clash_config = generate_clash_config(lines)
