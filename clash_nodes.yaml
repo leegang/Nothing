@@ -1,44 +1,63 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港-1B
+  name: 🇭🇰 香港
   network: tcp
   port: 19901
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 224d1225-7efa-455b-b87f-5316fa6f6990
+  uuid: fd9d672d-adaf-4bda-9041-131566e0014c
   ws-opts: null
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港-1A
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
+  name: 🇷🇺 俄罗斯-圣彼得堡-001
+  network: ws
+  port: 22010
+  server: 195.58.49.84
   tls: false
   type: vmess
-  uuid: 2394824b-5999-4d3e-bb40-a97b739c2f9f
-  ws-opts: null
+  uuid: 4832189b-0aa6-4802-9647-2b9bffb9d37c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-拉斯维加斯-002
+  network: ws
+  port: 23069
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 4832189b-0aa6-4802-9647-2b9bffb9d37c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 proxy-groups:
 - name: 🚀 手动切换
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇭🇰 香港-1B
-  - 🇭🇰 香港-1A
+  - 🇭🇰 香港
+  - 🇷🇺 俄罗斯-圣彼得堡-001
+  - 🇺🇸 美国-拉斯维加斯-002
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 香港-1B
-  - 🇭🇰 香港-1A
+  - 🇭🇰 香港
+  - 🇷🇺 俄罗斯-圣彼得堡-001
+  - 🇺🇸 美国-拉斯维加斯-002
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇭🇰 香港-1B
-  - 🇭🇰 香港-1A
+  - 🇭🇰 香港
+  - 🇷🇺 俄罗斯-圣彼得堡-001
+  - 🇺🇸 美国-拉斯维加斯-002
   type: load-balance
 rule-providers:
   apple:
