@@ -1,17 +1,303 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港-1A
+  name: 🇭🇰 中国-香港-001-1A
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 9266b313-07e8-4121-b76e-f1432906e08c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1M
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 70febc8e-922a-437e-889b-4e57218add4e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1L
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 009503c0-7712-468d-9baf-0ca787987d14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1I
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 34b7ad49-fecb-4ac3-95e9-08da3bd25c9e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港
   network: tcp
   port: 19901
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: fd9d672d-adaf-4bda-9041-131566e0014c
+  uuid: 625d4113-3602-447e-81d5-93b23a21d3a5
   ws-opts: null
 - alterId: 0
   cipher: auto
-  name: 🇩🇪 德国法兰克福
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1K
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: b5c8b1ad-509d-4c0f-9cb9-bdfa7ae813dc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1C
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 27bc4258-cc03-4f46-be76-2ea2e02c7a89
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1L
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 009503c0-7712-468d-9baf-0ca787987d14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1C
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 27bc4258-cc03-4f46-be76-2ea2e02c7a89
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1K
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: b5c8b1ad-509d-4c0f-9cb9-bdfa7ae813dc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1J
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 01ad2d5c-4059-4938-8a15-a21313cca8a3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1K
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: b5c8b1ad-509d-4c0f-9cb9-bdfa7ae813dc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1B
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 2d95dbe2-6053-4d60-a963-a24be8326009
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 5648f1e5-212f-4b5f-a48d-8077f52c88a8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1M
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 70febc8e-922a-437e-889b-4e57218add4e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1D
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 35076898-a392-4ee7-b277-80e3b1cb0ae2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1G
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 5648f1e5-212f-4b5f-a48d-8077f52c88a8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1F
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 8ffef5de-e857-46ee-aebc-b5e2eec5ba93
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1G
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 5648f1e5-212f-4b5f-a48d-8077f52c88a8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1B
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 2d95dbe2-6053-4d60-a963-a24be8326009
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1I
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 34b7ad49-fecb-4ac3-95e9-08da3bd25c9e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1F
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 8ffef5de-e857-46ee-aebc-b5e2eec5ba93
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1E
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: e6e9c995-eb5f-460b-99aa-af62a88e738b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1B
   network: ws
   port: 23451
   server: frankfurt.faforex.eu.org
@@ -24,50 +310,410 @@ proxies:
     path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港-1C
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
+  name: 🇭🇰 中国-香港-001-1H
+  network: ws
+  port: 23010
+  server: 212.192.12.154
   tls: false
   type: vmess
-  uuid: 011245f5-1e01-4bca-bba5-442564adfe78
-  ws-opts: null
+  uuid: 4832189b-0aa6-4802-9647-2b9bffb9d37c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港-1B
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
+  name: 🇺🇸 美国-1A
+  network: ws
+  port: 23451
+  server: phx-plus-1ddns.faforex.eu.org
   tls: false
   type: vmess
-  uuid: 0d1d2dff-f3c8-4a5c-8b37-d0c44bdc381c
-  ws-opts: null
+  uuid: ff819b5d-de24-41d5-a658-cb3819020566
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1I
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 34b7ad49-fecb-4ac3-95e9-08da3bd25c9e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1A
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: ff819b5d-de24-41d5-a658-cb3819020566
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-1B
+  network: ws
+  port: 23451
+  server: phx-plus-1ddns.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: 9321e28e-5155-4d07-b046-160430429f5f
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1H
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 4832189b-0aa6-4802-9647-2b9bffb9d37c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1L
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 009503c0-7712-468d-9baf-0ca787987d14
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1D
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 35076898-a392-4ee7-b277-80e3b1cb0ae2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1J
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 01ad2d5c-4059-4938-8a15-a21313cca8a3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 27bc4258-cc03-4f46-be76-2ea2e02c7a89
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1F
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 8ffef5de-e857-46ee-aebc-b5e2eec5ba93
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1E
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: e6e9c995-eb5f-460b-99aa-af62a88e738b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1J
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 01ad2d5c-4059-4938-8a15-a21313cca8a3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1E
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: e6e9c995-eb5f-460b-99aa-af62a88e738b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1M
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 70febc8e-922a-437e-889b-4e57218add4e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1A
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 9266b313-07e8-4121-b76e-f1432906e08c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1A
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 9266b313-07e8-4121-b76e-f1432906e08c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1H
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 4832189b-0aa6-4802-9647-2b9bffb9d37c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1B
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: 2d95dbe2-6053-4d60-a963-a24be8326009
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1D
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 35076898-a392-4ee7-b277-80e3b1cb0ae2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 proxy-groups:
 - name: 🚀 手动切换
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇭🇰 香港-1A
-  - 🇩🇪 德国法兰克福
-  - 🇭🇰 香港-1C
-  - 🇭🇰 香港-1B
+  - 🇭🇰 中国-香港-001-1A
+  - 🇭🇰 中国-香港-001-1M
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1L
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1I
+  - 🇭🇰 香港
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1K
+  - 🇩🇪 德国-法兰克福-001-1C
+  - 🇭🇰 中国-香港-001-1L
+  - 🇭🇰 中国-香港-001-1C
+  - 🇩🇪 德国-法兰克福-001-1K
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1J
+  - 🇭🇰 中国-香港-001-1K
+  - 🇭🇰 中国-香港-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1M
+  - 🇭🇰 中国-香港-001-1D
+  - 🇩🇪 德国-法兰克福-001-1G
+  - 🇩🇪 德国-法兰克福-001-1F
+  - 🇭🇰 中国-香港-001-1G
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
+  - 🇩🇪 德国-法兰克福-001-1I
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
+  - 🇩🇪 德国法兰克福-1B
+  - 🇭🇰 中国-香港-001-1H
+  - 🇺🇸 美国-1A
+  - 🇭🇰 中国-香港-001-1I
+  - 🇩🇪 德国法兰克福-1A
+  - 🇺🇸 美国-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1H
+  - 🇩🇪 德国-法兰克福-001-1L
+  - 🇩🇪 德国-法兰克福-001-1D
+  - 🇩🇪 德国-法兰克福-001-1J
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  - 🇭🇰 中国-香港-001-1F
+  - 🇭🇰 中国-香港-001-1E
+  - 🇭🇰 中国-香港-001-1J
+  - 🇩🇪 德国-法兰克福-001-1E
+  - 🇩🇪 德国-法兰克福-001-1M
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
+  - 🇩🇪 德国-法兰克福-001-1A
+  - 🇩🇪 德国-法兰克福-001-1H
+  - 🇩🇪 德国-法兰克福-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 香港-1A
-  - 🇩🇪 德国法兰克福
-  - 🇭🇰 香港-1C
-  - 🇭🇰 香港-1B
+  - 🇭🇰 中国-香港-001-1A
+  - 🇭🇰 中国-香港-001-1M
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1L
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1I
+  - 🇭🇰 香港
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1K
+  - 🇩🇪 德国-法兰克福-001-1C
+  - 🇭🇰 中国-香港-001-1L
+  - 🇭🇰 中国-香港-001-1C
+  - 🇩🇪 德国-法兰克福-001-1K
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1J
+  - 🇭🇰 中国-香港-001-1K
+  - 🇭🇰 中国-香港-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1M
+  - 🇭🇰 中国-香港-001-1D
+  - 🇩🇪 德国-法兰克福-001-1G
+  - 🇩🇪 德国-法兰克福-001-1F
+  - 🇭🇰 中国-香港-001-1G
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
+  - 🇩🇪 德国-法兰克福-001-1I
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
+  - 🇩🇪 德国法兰克福-1B
+  - 🇭🇰 中国-香港-001-1H
+  - 🇺🇸 美国-1A
+  - 🇭🇰 中国-香港-001-1I
+  - 🇩🇪 德国法兰克福-1A
+  - 🇺🇸 美国-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1H
+  - 🇩🇪 德国-法兰克福-001-1L
+  - 🇩🇪 德国-法兰克福-001-1D
+  - 🇩🇪 德国-法兰克福-001-1J
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  - 🇭🇰 中国-香港-001-1F
+  - 🇭🇰 中国-香港-001-1E
+  - 🇭🇰 中国-香港-001-1J
+  - 🇩🇪 德国-法兰克福-001-1E
+  - 🇩🇪 德国-法兰克福-001-1M
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
+  - 🇩🇪 德国-法兰克福-001-1A
+  - 🇩🇪 德国-法兰克福-001-1H
+  - 🇩🇪 德国-法兰克福-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇭🇰 香港-1A
-  - 🇩🇪 德国法兰克福
-  - 🇭🇰 香港-1C
-  - 🇭🇰 香港-1B
+  - 🇭🇰 中国-香港-001-1A
+  - 🇭🇰 中国-香港-001-1M
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1L
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1I
+  - 🇭🇰 香港
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1K
+  - 🇩🇪 德国-法兰克福-001-1C
+  - 🇭🇰 中国-香港-001-1L
+  - 🇭🇰 中国-香港-001-1C
+  - 🇩🇪 德国-法兰克福-001-1K
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1J
+  - 🇭🇰 中国-香港-001-1K
+  - 🇭🇰 中国-香港-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1M
+  - 🇭🇰 中国-香港-001-1D
+  - 🇩🇪 德国-法兰克福-001-1G
+  - 🇩🇪 德国-法兰克福-001-1F
+  - 🇭🇰 中国-香港-001-1G
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
+  - 🇩🇪 德国-法兰克福-001-1I
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
+  - 🇩🇪 德国法兰克福-1B
+  - 🇭🇰 中国-香港-001-1H
+  - 🇺🇸 美国-1A
+  - 🇭🇰 中国-香港-001-1I
+  - 🇩🇪 德国法兰克福-1A
+  - 🇺🇸 美国-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1H
+  - 🇩🇪 德国-法兰克福-001-1L
+  - 🇩🇪 德国-法兰克福-001-1D
+  - 🇩🇪 德国-法兰克福-001-1J
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  - 🇭🇰 中国-香港-001-1F
+  - 🇭🇰 中国-香港-001-1E
+  - 🇭🇰 中国-香港-001-1J
+  - 🇩🇪 德国-法兰克福-001-1E
+  - 🇩🇪 德国-法兰克福-001-1M
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
+  - 🇩🇪 德国-法兰克福-001-1A
+  - 🇩🇪 德国-法兰克福-001-1H
+  - 🇩🇪 德国-法兰克福-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
   type: load-balance
 rule-providers:
   apple:
