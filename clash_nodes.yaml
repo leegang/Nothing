@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港
+  name: 🇭🇰 香港-1A
   network: tcp
   port: 19901
   server: xg.dashuai.cyou
@@ -11,53 +11,63 @@ proxies:
   ws-opts: null
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001
+  name: 🇩🇪 德国法兰克福
   network: ws
-  port: 22010
-  server: 195.58.49.84
+  port: 23451
+  server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
-  uuid: 4832189b-0aa6-4802-9647-2b9bffb9d37c
+  uuid: 9321e28e-5155-4d07-b046-160430429f5f
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国-拉斯维加斯-002
-  network: ws
-  port: 23069
-  server: 45.147.201.231
+  name: 🇭🇰 香港-1C
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 4832189b-0aa6-4802-9647-2b9bffb9d37c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 011245f5-1e01-4bca-bba5-442564adfe78
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港-1B
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 0d1d2dff-f3c8-4a5c-8b37-d0c44bdc381c
+  ws-opts: null
 proxy-groups:
 - name: 🚀 手动切换
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇭🇰 香港
-  - 🇷🇺 俄罗斯-圣彼得堡-001
-  - 🇺🇸 美国-拉斯维加斯-002
+  - 🇭🇰 香港-1A
+  - 🇩🇪 德国法兰克福
+  - 🇭🇰 香港-1C
+  - 🇭🇰 香港-1B
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 香港
-  - 🇷🇺 俄罗斯-圣彼得堡-001
-  - 🇺🇸 美国-拉斯维加斯-002
+  - 🇭🇰 香港-1A
+  - 🇩🇪 德国法兰克福
+  - 🇭🇰 香港-1C
+  - 🇭🇰 香港-1B
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇭🇰 香港
-  - 🇷🇺 俄罗斯-圣彼得堡-001
-  - 🇺🇸 美国-拉斯维加斯-002
+  - 🇭🇰 香港-1A
+  - 🇩🇪 德国法兰克福
+  - 🇭🇰 香港-1C
+  - 🇭🇰 香港-1B
   type: load-balance
 rule-providers:
   apple:
