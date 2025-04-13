@@ -44,5 +44,5 @@ jobs:
       with:
         author_name: 'github-actions[bot]'
         author_email: 'github-actions[bot]@users.noreply.github.com'
-        message: 'Add REMOTE.conf'
-        add: './clash.yaml'
+        message: 'Add clash_nodes.yaml'
+        add: './clash_nodes.yaml'
