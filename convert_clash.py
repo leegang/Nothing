@@ -209,7 +209,7 @@ def main():
         with open("clash_nodes.yaml", "w", encoding="utf-8") as f:
             import yaml
             yaml.dump(clash_config, f, default_flow_style=False, allow_unicode=True)
-        print(f"{filename} 文件写入成功！")
+        print(f"clash_nodes.yaml 文件写入成功！")
     except yaml.YAMLError as e:
         # 捕获 YAML 格式错误
         print(f"YAML 格式错误: {e}")
