@@ -1,0 +1,221 @@
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: f165ef69-850f-4e34-a871-b997c187ad24
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-拉斯维加斯-002-1E
+  network: ws
+  port: 23069
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 4e04511a-162f-4fa7-8a70-bc8a4b107f64
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-拉斯维加斯-002-1A
+  network: ws
+  port: 23069
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 236a6f9f-eb14-42e1-bcc3-2082d7694278
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: a3c89d01-1b07-40b2-a7be-b3469d687200
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-拉斯维加斯-002-1C
+  network: ws
+  port: 23069
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: c021c157-634c-4bf9-bfec-594738f7a576
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-拉斯维加斯-002-1D
+  network: ws
+  port: 23069
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 755fc6b9-372e-449c-9d80-9096a7083a97
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-拉斯维加斯-002-1B
+  network: ws
+  port: 23069
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: e5d4d3e4-bb06-4fda-b3b6-d9c5a9c55566
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+proxy-groups:
+- name: 🚀 手动切换
+  proxies:
+  - ♻️ 自动选择
+  - 🔀 负载均衡
+  - 🇩🇪 德国法兰克福
+  - 🇺🇸 美国-拉斯维加斯-002-1E
+  - 🇺🇸 美国-拉斯维加斯-002-1A
+  - 🇭🇰 香港
+  - 🇺🇸 美国-拉斯维加斯-002-1C
+  - 🇺🇸 美国-拉斯维加斯-002-1D
+  - 🇺🇸 美国-拉斯维加斯-002-1B
+  type: select
+- interval: 600
+  lazy: true
+  name: ♻️ 自动选择
+  proxies:
+  - 🇩🇪 德国法兰克福
+  - 🇺🇸 美国-拉斯维加斯-002-1E
+  - 🇺🇸 美国-拉斯维加斯-002-1A
+  - 🇭🇰 香港
+  - 🇺🇸 美国-拉斯维加斯-002-1C
+  - 🇺🇸 美国-拉斯维加斯-002-1D
+  - 🇺🇸 美国-拉斯维加斯-002-1B
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+- name: 🔀 负载均衡
+  proxies:
+  - 🇩🇪 德国法兰克福
+  - 🇺🇸 美国-拉斯维加斯-002-1E
+  - 🇺🇸 美国-拉斯维加斯-002-1A
+  - 🇭🇰 香港
+  - 🇺🇸 美国-拉斯维加斯-002-1C
+  - 🇺🇸 美国-拉斯维加斯-002-1D
+  - 🇺🇸 美国-拉斯维加斯-002-1B
+  type: load-balance
+rule-providers:
+  apple:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/apple.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+  applications:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/applications.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+  cncidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/cncidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+  direct:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/direct.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+  gfw:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/gfw.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+  google:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/google.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+  icloud:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/icloud.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+  lancidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/lancidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+  private:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/private.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+  proxy:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/proxy.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+  reject:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/reject.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+  telegramcidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/telegramcidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+  tld-not-cn:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/tld-not-cn.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+rules:
+- RULE-SET,applications,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- RULE-SET,private,DIRECT
+- RULE-SET,reject,REJECT
+- RULE-SET,icloud,DIRECT
+- RULE-SET,apple,DIRECT
+- RULE-SET,google,🚀 手动切换
+- RULE-SET,proxy,♻️ 自动选择
+- RULE-SET,direct,DIRECT
+- RULE-SET,lancidr,DIRECT
+- RULE-SET,cncidr,DIRECT
+- RULE-SET,telegramcidr,♻️ 自动选择
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,♻️ 自动选择
