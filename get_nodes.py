@@ -12,7 +12,7 @@ def fetch_vmess_nodes(url):
         vmess_nodes = re.findall(r'vmess://[a-zA-Z0-9+/=]+', content)
 
         if vmess_nodes:
-            print("发现以下VMess节点：")
+            # print("发现以下VMess节点：")
             for i, node in enumerate(vmess_nodes, 1):
                 print(f"{node}")
         else:
