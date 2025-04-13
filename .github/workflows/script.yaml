@@ -13,13 +13,19 @@ jobs:
       - name: 获取仓库代码
         uses: actions/checkout@v3  # 获取代码
 
-      - name: 执行文件点击打开获取ss节点信息
-        run: ./ss | grep -Eo 'ss://[^ ]+' > url.txt  # 提取 ss 链接并保存到 url.txt
+      - name: 安装Python依赖环境
+        run: |
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install -r requests  # 如果有依赖文件
+
+      - name: 运行获取节点脚本
+        run: python get_nodes.py > ss.txt  # 执行脚本并将输出保存到 ss.txt
 
       - name: 提交更改
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add url.txt
+          git add ss.txt
           git commit -m '每日更新 ss 地址'
           git push origin main
