@@ -41,6 +41,33 @@ def convert_to_clash(vmess_data):
         return None
 
 def main():
+    # 从 ss.txt 文件读取vmess节点
+    try:
+        with open("ss.txt", "r") as file:
+            vmess_urls = [line.strip() for line in file if line.startswith("vmess://")]
+    except FileNotFoundError:
+        print("未找到 ss.txt 文件，请确保文件存在于当前目录中。")
+        return
+
+    # 打印读取到的 vmess_urls
+    print("\n读取到的 vmess URLs：")
+    for url in vmess_urls:
+        print(url)
+
+    clash_nodes = []
+
+    for vmess_url in vmess_urls:
+        vmess_data = parse_vmess_node(vmess_url)
+        if vmess_data:
+            clash_node = convert_to_clash(vmess_data)
+            if clash_node:
+                clash_nodes.append(clash_node)
+
+    # 打印生成的 Clash 节点
+    print("\n生成的 Clash 节点：")
+    for node in clash_nodes:
+        print(json.dumps(node, indent=4, ensure_ascii=False))
+
     # 保存为 Clash 配置文件
     clash_config = {
         "proxies": clash_nodes,
