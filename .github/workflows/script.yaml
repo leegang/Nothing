@@ -13,14 +13,17 @@ jobs:
       - name: 获取仓库代码
         uses: actions/checkout@v3  # 获取代码
 
-      - name: 安装Python依赖环境
+      - name: 设置Python环境并安装依赖
         run: |
-          python3 -m venv venv
-          source venv/bin/activate
-          pip install  requests  # 如果有依赖文件
+          python3 -m venv venv       # 创建虚拟环境
+          source venv/bin/activate   # 激活虚拟环境
+          pip install --upgrade pip  # 升级 pip
+          pip install requests       # 安装 requests
 
       - name: 运行获取节点脚本
-        run: python get_nodes.py > ss.txt  # 执行脚本并将输出保存到 ss.txt
+        run: |
+          source venv/bin/activate   # 再次激活虚拟环境
+          python get_nodes.py > ss.txt  # 执行脚本并将输出保存到 ss.txt
 
       - name: 提交更改
         run: |
