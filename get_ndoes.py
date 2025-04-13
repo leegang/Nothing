@@ -14,7 +14,7 @@ def fetch_vmess_nodes(url):
         if vmess_nodes:
             print("发现以下VMess节点：")
             for i, node in enumerate(vmess_nodes, 1):
-                print(f"{i}: {node}")
+                print(f"{node}")
         else:
             print("未找到任何VMess节点。")
     except requests.exceptions.RequestException as e:
