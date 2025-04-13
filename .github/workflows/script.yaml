@@ -17,7 +17,7 @@ jobs:
         run: |
           python3 -m venv venv
           source venv/bin/activate
-          pip install -r requests  # 如果有依赖文件
+          pip install  requests  # 如果有依赖文件
 
       - name: 运行获取节点脚本
         run: python get_nodes.py > ss.txt  # 执行脚本并将输出保存到 ss.txt
