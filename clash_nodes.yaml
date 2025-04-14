@@ -1,6 +1,97 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 🇩🇪 德国法兰克福-1A
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: cda6d86e-aefc-4205-b55c-cd5b163931c9
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1G
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: caaa2f03-e6c2-499e-96c1-64e3359830ce
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1E
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: c98bcbb3-6c05-4161-8726-96a767c326d3
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1F
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: b20910eb-950e-416d-9670-45c3136c732c
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-1A
+  network: ws
+  port: 23451
+  server: phx-plus-1ddns.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: cda6d86e-aefc-4205-b55c-cd5b163931c9
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1D
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: 113bb078-1a86-4e77-a8f4-f01190493064
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-拉斯维加斯-001
+  network: ws
+  port: 20010
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 2c4d4644-4db8-43d7-84dd-63c81c7c0164
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 🇺🇸 美国-1B
   network: ws
   port: 23451
@@ -8,6 +99,45 @@ proxies:
   tls: false
   type: vmess
   uuid: 295141e2-7d4a-4552-9e76-e2647fb5e2b7
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-1C
+  network: ws
+  port: 23451
+  server: phx-plus-1ddns.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: f7897c92-7b58-4ddf-a2ad-92dd11512d38
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1B
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: 295141e2-7d4a-4552-9e76-e2647fb5e2b7
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国-1D
+  network: ws
+  port: 23451
+  server: phx-plus-1ddns.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: 113bb078-1a86-4e77-a8f4-f01190493064
   ws-opts:
     headers:
       Host: phx-plus-1ddns.faforex.eu.org
@@ -25,196 +155,56 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 9a64c26d-a723-4918-b0d0-1f43adb64aba
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国法兰克福-1D
-  network: ws
-  port: 23451
-  server: frankfurt.faforex.eu.org
-  tls: false
-  type: vmess
-  uuid: c98bcbb3-6c05-4161-8726-96a767c326d3
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港-1A
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 8c51051b-406d-46a3-8c63-b8cd29e1893b
-  ws-opts: null
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 861bac94-c530-4074-9d68-9f4b74d3292f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国-1D
-  network: ws
-  port: 23451
-  server: phx-plus-1ddns.faforex.eu.org
-  tls: false
-  type: vmess
-  uuid: c98bcbb3-6c05-4161-8726-96a767c326d3
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国法兰克福-1A
-  network: ws
-  port: 23451
-  server: frankfurt.faforex.eu.org
-  tls: false
-  type: vmess
-  uuid: cda6d86e-aefc-4205-b55c-cd5b163931c9
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 149d80ff-3a38-45fd-a063-db313df59b35
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国法兰克福-1B
-  network: ws
-  port: 23451
-  server: frankfurt.faforex.eu.org
-  tls: false
-  type: vmess
-  uuid: 295141e2-7d4a-4552-9e76-e2647fb5e2b7
-  ws-opts:
-    headers:
-      Host: us-new03.daluquan.top
-    path: /itdog?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: ad593a9d-b48a-48b7-baf9-07301cf571ff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 0bdd9143-0bf4-4ce4-866e-819c8915ed98
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港-1B
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 2fd4c73e-da14-4651-9f15-34a8c6cffcd9
-  ws-opts: null
 proxy-groups:
 - name: 🚀 手动切换
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇺🇸 美国-1B
-  - 🇩🇪 德国法兰克福-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  - 🇩🇪 德国法兰克福-1D
-  - 🇭🇰 香港-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  - 🇺🇸 美国-1D
   - 🇩🇪 德国法兰克福-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
+  - 🇩🇪 德国法兰克福-1G
+  - 🇩🇪 德国法兰克福-1E
+  - 🇩🇪 德国法兰克福-1F
+  - 🇺🇸 美国-1A
+  - 🇩🇪 德国法兰克福-1D
+  - 🇺🇸 美国-拉斯维加斯-001
+  - 🇺🇸 美国-1B
+  - 🇺🇸 美国-1C
   - 🇩🇪 德国法兰克福-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇭🇰 香港-1B
+  - 🇺🇸 美国-1D
+  - 🇩🇪 德国法兰克福-1C
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 美国-1B
-  - 🇩🇪 德国法兰克福-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  - 🇩🇪 德国法兰克福-1D
-  - 🇭🇰 香港-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  - 🇺🇸 美国-1D
   - 🇩🇪 德国法兰克福-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
+  - 🇩🇪 德国法兰克福-1G
+  - 🇩🇪 德国法兰克福-1E
+  - 🇩🇪 德国法兰克福-1F
+  - 🇺🇸 美国-1A
+  - 🇩🇪 德国法兰克福-1D
+  - 🇺🇸 美国-拉斯维加斯-001
+  - 🇺🇸 美国-1B
+  - 🇺🇸 美国-1C
   - 🇩🇪 德国法兰克福-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇭🇰 香港-1B
+  - 🇺🇸 美国-1D
+  - 🇩🇪 德国法兰克福-1C
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇺🇸 美国-1B
-  - 🇩🇪 德国法兰克福-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  - 🇩🇪 德国法兰克福-1D
-  - 🇭🇰 香港-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  - 🇺🇸 美国-1D
   - 🇩🇪 德国法兰克福-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
+  - 🇩🇪 德国法兰克福-1G
+  - 🇩🇪 德国法兰克福-1E
+  - 🇩🇪 德国法兰克福-1F
+  - 🇺🇸 美国-1A
+  - 🇩🇪 德国法兰克福-1D
+  - 🇺🇸 美国-拉斯维加斯-001
+  - 🇺🇸 美国-1B
+  - 🇺🇸 美国-1C
   - 🇩🇪 德国法兰克福-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇭🇰 香港-1B
+  - 🇺🇸 美国-1D
+  - 🇩🇪 德国法兰克福-1C
   type: load-balance
 rule-providers:
   apple:
