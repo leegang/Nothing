@@ -1,46 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 469c0719-04a2-44bb-b6bc-f085a38a0b8a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 859b5e9b-6301-4da6-a171-e46221f1f309
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 中国-香港-001-1A
-  network: ws
-  port: 23010
-  server: 212.192.12.154
-  tls: false
-  type: vmess
-  uuid: 4813c3d0-1371-41de-9f3a-ea915dc8be5f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 🇭🇰 香港-1B
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 34da3bcc-fa48-49f1-8d86-3f3dd4285f30
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港-1A
   network: tcp
   port: 19901
   server: xg.dashuai.cyou
@@ -50,155 +21,69 @@ proxies:
   ws-opts: null
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  name: 🇩🇪 德国法兰克福-1A
   network: ws
-  port: 22010
-  server: 195.58.49.84
+  port: 23451
+  server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
-  uuid: 0a401c51-d83b-4c92-a514-62a8ef9b7021
+  uuid: c98bcbb3-6c05-4161-8726-96a767c326d3
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 中国-香港-001-1D
+  name: 🇩🇪 德国法兰克福-1B
   network: ws
-  port: 23010
-  server: 212.192.12.154
+  port: 23451
+  server: frankfurt.faforex.eu.org
   tls: false
   type: vmess
-  uuid: 859b5e9b-6301-4da6-a171-e46221f1f309
+  uuid: cda6d86e-aefc-4205-b55c-cd5b163931c9
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 中国-香港-001-1C
-  network: ws
-  port: 23010
-  server: 212.192.12.154
-  tls: false
-  type: vmess
-  uuid: 469c0719-04a2-44bb-b6bc-f085a38a0b8a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1F
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 76d7d527-d6e6-4452-bb36-34d7d8e808c6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港-1A
+  name: 🇭🇰 香港-1C
   network: tcp
   port: 19901
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: f11bd178-e105-4795-ac68-9513838f30ab
+  uuid: e8ef63be-30fb-498c-9ce9-9b1189cc4eb7
   ws-opts: null
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 8f975464-f848-47ad-8899-42f7df0e0d01
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 76c6fd5f-36aa-485e-be30-361364fc2874
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 4813c3d0-1371-41de-9f3a-ea915dc8be5f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 proxy-groups:
 - name: 🚀 手动切换
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  - 🇭🇰 中国-香港-001-1A
   - 🇭🇰 香港-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1G
-  - 🇭🇰 中国-香港-001-1D
-  - 🇭🇰 中国-香港-001-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
   - 🇭🇰 香港-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
+  - 🇩🇪 德国法兰克福-1A
+  - 🇩🇪 德国法兰克福-1B
+  - 🇭🇰 香港-1C
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  - 🇭🇰 中国-香港-001-1A
   - 🇭🇰 香港-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1G
-  - 🇭🇰 中国-香港-001-1D
-  - 🇭🇰 中国-香港-001-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
   - 🇭🇰 香港-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
+  - 🇩🇪 德国法兰克福-1A
+  - 🇩🇪 德国法兰克福-1B
+  - 🇭🇰 香港-1C
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  - 🇭🇰 中国-香港-001-1A
   - 🇭🇰 香港-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1G
-  - 🇭🇰 中国-香港-001-1D
-  - 🇭🇰 中国-香港-001-1C
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
   - 🇭🇰 香港-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1A
+  - 🇩🇪 德国法兰克福-1A
+  - 🇩🇪 德国法兰克福-1B
+  - 🇭🇰 香港-1C
   type: load-balance
 rule-providers:
   apple:
