@@ -1,26 +1,62 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 中国-香港-001-1A
-  network: ws
-  port: 23010
-  server: 212.192.12.154
+  name: 🇭🇰 香港-1B
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 2c4d4644-4db8-43d7-84dd-63c81c7c0164
+  uuid: d997fcc6-579e-465e-a958-46620d393d87
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1E
+  network: ws
+  port: 20050
+  server: 91.149.233.178
+  tls: false
+  type: vmess
+  uuid: cd86e1a0-fbcf-4d4b-8c8a-5e8465303814
   ws-opts:
     headers:
       Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇩🇪 德国-法兰克福-001-1D
+  name: 🇩🇪 德国法兰克福-1A
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: fa250034-0d63-4181-aba5-10da0002018a
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国法兰克福-1B
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  uuid: c2d2efc6-c987-420a-a65a-68ff1eb87689
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国-法兰克福-001-1C
   network: ws
   port: 20050
   server: 91.149.233.178
   tls: false
   type: vmess
-  uuid: 61396aa8-033b-4093-9c47-c45cf7e7b608
+  uuid: 3e3c1a52-6268-4d9b-9928-836d6952ac83
   ws-opts:
     headers:
       Host: ''
@@ -33,156 +69,40 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 4224c408-7ba2-4b3c-aada-b5b45cf07b74
+  uuid: 50934e06-4128-4ad2-9074-486f1dfc8cd8
   ws-opts: null
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 中国-香港-001-1C
-  network: ws
-  port: 23010
-  server: 212.192.12.154
-  tls: false
-  type: vmess
-  uuid: 51a1fe7e-5e91-4012-b74b-1b84c92c1a7f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 中国-香港-001-1B
-  network: ws
-  port: 23010
-  server: 212.192.12.154
-  tls: false
-  type: vmess
-  uuid: 13eb9c2a-381c-430f-abb2-4e394bc4b3e6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国-法兰克福-001-1C
-  network: ws
-  port: 20050
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: 51a1fe7e-5e91-4012-b74b-1b84c92c1a7f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国-法兰克福-001-1B
-  network: ws
-  port: 20050
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: 13eb9c2a-381c-430f-abb2-4e394bc4b3e6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港-1B
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: ec8fd9d4-01b9-491c-9f65-84602e98aceb
-  ws-opts: null
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国-法兰克福-001-1E
-  network: ws
-  port: 20050
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: ba7fec33-5e26-48d4-b95b-d49358f38acc
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国-法兰克福-001-1A
-  network: ws
-  port: 20050
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: 2c4d4644-4db8-43d7-84dd-63c81c7c0164
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国-法兰克福-001-1G
-  network: ws
-  port: 20050
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: bbdc527e-7601-41f5-b2d5-14fab854cff0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 proxy-groups:
 - name: 🚀 手动切换
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇭🇰 中国-香港-001-1A
-  - 🇩🇪 德国-法兰克福-001-1D
-  - 🇭🇰 香港-1A
-  - 🇭🇰 中国-香港-001-1C
-  - 🇭🇰 中国-香港-001-1B
-  - 🇩🇪 德国-法兰克福-001-1C
-  - 🇩🇪 德国-法兰克福-001-1B
   - 🇭🇰 香港-1B
   - 🇩🇪 德国-法兰克福-001-1E
-  - 🇩🇪 德国-法兰克福-001-1A
-  - 🇩🇪 德国-法兰克福-001-1G
+  - 🇩🇪 德国法兰克福-1A
+  - 🇩🇪 德国法兰克福-1B
+  - 🇩🇪 德国-法兰克福-001-1C
+  - 🇭🇰 香港-1A
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 中国-香港-001-1A
-  - 🇩🇪 德国-法兰克福-001-1D
-  - 🇭🇰 香港-1A
-  - 🇭🇰 中国-香港-001-1C
-  - 🇭🇰 中国-香港-001-1B
-  - 🇩🇪 德国-法兰克福-001-1C
-  - 🇩🇪 德国-法兰克福-001-1B
   - 🇭🇰 香港-1B
   - 🇩🇪 德国-法兰克福-001-1E
-  - 🇩🇪 德国-法兰克福-001-1A
-  - 🇩🇪 德国-法兰克福-001-1G
+  - 🇩🇪 德国法兰克福-1A
+  - 🇩🇪 德国法兰克福-1B
+  - 🇩🇪 德国-法兰克福-001-1C
+  - 🇭🇰 香港-1A
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇭🇰 中国-香港-001-1A
-  - 🇩🇪 德国-法兰克福-001-1D
-  - 🇭🇰 香港-1A
-  - 🇭🇰 中国-香港-001-1C
-  - 🇭🇰 中国-香港-001-1B
-  - 🇩🇪 德国-法兰克福-001-1C
-  - 🇩🇪 德国-法兰克福-001-1B
   - 🇭🇰 香港-1B
   - 🇩🇪 德国-法兰克福-001-1E
-  - 🇩🇪 德国-法兰克福-001-1A
-  - 🇩🇪 德国-法兰克福-001-1G
+  - 🇩🇪 德国法兰克福-1A
+  - 🇩🇪 德国法兰克福-1B
+  - 🇩🇪 德国-法兰克福-001-1C
+  - 🇭🇰 香港-1A
   type: load-balance
 rule-providers:
   apple:
