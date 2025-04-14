@@ -1,78 +1,13 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1J
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1C
   network: ws
   port: 22010
   server: 195.58.49.84
   tls: false
   type: vmess
-  uuid: 3c2a9548-d74f-41cd-85c0-d6b51e8d7e14
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1K
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 1938e1a3-15bb-4530-a665-1fe25ab97875
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1L
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: 4813c3d0-1371-41de-9f3a-ea915dc8be5f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: aedbe4df-ff25-4e71-89a9-9319d8eb2dfa
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1I
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: f2250333-fd85-4178-8cb8-20b8c297e094
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: d11e67b1-6906-4842-83d8-113bd5589a5d
+  uuid: 469c0719-04a2-44bb-b6bc-f085a38a0b8a
   ws-opts:
     headers:
       Host: ''
@@ -85,7 +20,69 @@ proxies:
   server: 195.58.49.84
   tls: false
   type: vmess
-  uuid: f6f349f4-cc4e-4e71-b6f3-05529fbaeedf
+  uuid: 859b5e9b-6301-4da6-a171-e46221f1f309
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1A
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 4813c3d0-1371-41de-9f3a-ea915dc8be5f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港-1B
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: dd87fc6e-9db9-4171-b821-dccd034b8523
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  network: ws
+  port: 22010
+  server: 195.58.49.84
+  tls: false
+  type: vmess
+  uuid: 0a401c51-d83b-4c92-a514-62a8ef9b7021
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1D
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 859b5e9b-6301-4da6-a171-e46221f1f309
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 中国-香港-001-1C
+  network: ws
+  port: 23010
+  server: 212.192.12.154
+  tls: false
+  type: vmess
+  uuid: 469c0719-04a2-44bb-b6bc-f085a38a0b8a
   ws-opts:
     headers:
       Host: ''
@@ -98,33 +95,43 @@ proxies:
   server: 195.58.49.84
   tls: false
   type: vmess
-  uuid: 9b5d3976-a777-41b8-b605-fe4c6d321e99
+  uuid: 76d7d527-d6e6-4452-bb36-34d7d8e808c6
   ws-opts:
     headers:
       Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  name: 🇭🇰 香港-1A
+  network: tcp
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: f11bd178-e105-4795-ac68-9513838f30ab
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1B
   network: ws
   port: 22010
   server: 195.58.49.84
   tls: false
   type: vmess
-  uuid: fc20ec18-87b9-4243-b45f-8978356c03fa
+  uuid: 8f975464-f848-47ad-8899-42f7df0e0d01
   ws-opts:
     headers:
       Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  name: 🇷🇺 俄罗斯-圣彼得堡-001-1E
   network: ws
   port: 22010
   server: 195.58.49.84
   tls: false
   type: vmess
-  uuid: fd12c8ed-cb58-4d94-bd91-06fc4caefb8d
+  uuid: 76c6fd5f-36aa-485e-be30-361364fc2874
   ws-opts:
     headers:
       Host: ''
@@ -137,20 +144,7 @@ proxies:
   server: 195.58.49.84
   tls: false
   type: vmess
-  uuid: 79f9844d-ab1f-4a46-9444-20cebf67f4c9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-001-1H
-  network: ws
-  port: 22010
-  server: 195.58.49.84
-  tls: false
-  type: vmess
-  uuid: acfa27f3-6680-4622-95c4-b54949c29d45
+  uuid: 4813c3d0-1371-41de-9f3a-ea915dc8be5f
   ws-opts:
     headers:
       Host: ''
@@ -160,51 +154,51 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🔀 负载均衡
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1J
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1K
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1L
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1I
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
   - 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
+  - 🇭🇰 中国-香港-001-1A
+  - 🇭🇰 香港-1B
   - 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  - 🇭🇰 中国-香港-001-1D
+  - 🇭🇰 中国-香港-001-1C
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
+  - 🇭🇰 香港-1A
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
   - 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1H
   type: select
 - interval: 600
   lazy: true
   name: ♻️ 自动选择
   proxies:
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1J
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1K
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1L
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1I
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
   - 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
+  - 🇭🇰 中国-香港-001-1A
+  - 🇭🇰 香港-1B
   - 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  - 🇭🇰 中国-香港-001-1D
+  - 🇭🇰 中国-香港-001-1C
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
+  - 🇭🇰 香港-1A
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
   - 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1H
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🔀 负载均衡
   proxies:
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1J
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1K
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1L
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1I
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
   - 🇷🇺 俄罗斯-圣彼得堡-001-1C
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1D
+  - 🇭🇰 中国-香港-001-1A
+  - 🇭🇰 香港-1B
   - 🇷🇺 俄罗斯-圣彼得堡-001-1G
+  - 🇭🇰 中国-香港-001-1D
+  - 🇭🇰 中国-香港-001-1C
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1F
+  - 🇭🇰 香港-1A
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1B
+  - 🇷🇺 俄罗斯-圣彼得堡-001-1E
   - 🇷🇺 俄罗斯-圣彼得堡-001-1A
-  - 🇷🇺 俄罗斯-圣彼得堡-001-1H
   type: load-balance
 rule-providers:
   apple:
