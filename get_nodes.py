@@ -21,7 +21,7 @@ def fetch_vmess_nodes(url):
         print(f"请求失败: {e}")
 
 # 指定目标URL
-url = "https://raw.githubusercontent.com/leetomlee123/freenode/refs/heads/main/README.md"
+url = "https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/US.txt"
 
 # 调用函数
 fetch_vmess_nodes(url)
